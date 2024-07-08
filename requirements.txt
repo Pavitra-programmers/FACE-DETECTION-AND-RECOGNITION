@@ -1,7 +1,7 @@
 gunicorn
 flask
 opencv-python
-dlib
+dlib==19.22.0
 face-recognition
 face-recognition-models
 numpy
