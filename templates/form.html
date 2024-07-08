@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>
+    Face detection 
+</title>
+{% endblock %}
+{% block body %}
+<div class="container">
+ <div class="form-container">
+    <form action="{{ url_for('new_face') }}" method="POST">
+        <label for="name">Enter name for new face:</label>
+        <input type="text" id="name" name="name" required>
+        <input type="submit" value="Submit">
+    </form>
+ </div>
+</div>
+{% endblock %}
